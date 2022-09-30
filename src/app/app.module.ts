@@ -12,7 +12,17 @@ import { LoginComponent } from './components/login/login.component';
 import { CsatModuleComponent } from './components/csat-module/csat-module.component';
 import { ProgramsComponent } from './components/programs/programs.component';
 import { CreateSurveyComponent } from './components/create-survey/create-survey.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import { HeaderBarComponent } from './lib-components/header-bar/header-bar.component';
+import { CardsComponent } from './lib-components/cards/cards.component';
+import { LaunchSurveyComponent } from './components/launch-survey/launch-survey.component';
+import { SurveyExclusionsComponent } from './components/survey-exclusions/survey-exclusions.component';
+import { SurveyResultsComponent } from './components/survey-results/survey-results.component';
+import { UserRoleComponent } from './components/user-role/user-role.component';
+import { QuestionBankComponent } from './components/question-bank/question-bank.component';
+import { SurveyFormsComponent } from './components/survey-forms/survey-forms.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,11 +34,24 @@ import { CreateSurveyComponent } from './components/create-survey/create-survey.
     LoginComponent,
     CsatModuleComponent,
     ProgramsComponent,
-    CreateSurveyComponent
+    CreateSurveyComponent,
+    HeaderBarComponent,
+    CardsComponent,
+    LaunchSurveyComponent,
+    SurveyExclusionsComponent,
+    SurveyResultsComponent,
+    UserRoleComponent,
+    QuestionBankComponent,
+    SurveyFormsComponent,
+    // MatBudulettonModule,
+    // MatIconMo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
