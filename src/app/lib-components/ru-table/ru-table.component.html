@@ -1,19 +1,21 @@
 <div class="dataCardContainer">
 
-    <div class="cardHeader">
+    <div class="cardHeader" fxLayout="row" fxLayoutAlign="space-between">
         <span class="cardTitle">
             <strong>{{tableTitle}} ({{totalTableDataCount}})</strong>
         </span>
-
+      <div>
         <div style="cursor:pointer;" fxLayout="row">
-            <div class="advFilter">Advanced Filter
+            <div class="advFilter" *ngIf="showFilter">Advanced Filter
                 <img src="./assets/filter.png" class="filterIcon">
             </div>
         </div>
 
-        <div class="bulkupload">BulkUpload</div>
-        <div class="download">Download</div>
-        <img src="./assets/collapse_icon.png" alt="close" class="pointerIcon">
+        <div class="bulkupload" *ngIf="showupload">BulkUpload</div>
+        <div class="download" *ngIf="download">Download</div>
+        <img src="./assets/collapse_icon.png" alt="close" class="pointerIcon" *ngIf="showicon">
+
+        </div>
     </div>
 
 

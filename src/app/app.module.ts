@@ -23,6 +23,7 @@ import { SurveyResultsComponent } from './components/survey-results/survey-resul
 import { UserRoleComponent } from './components/user-role/user-role.component';
 import { QuestionBankComponent } from './components/question-bank/question-bank.component';
 import { SurveyFormsComponent } from './components/survey-forms/survey-forms.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,13 +46,16 @@ import { SurveyFormsComponent } from './components/survey-forms/survey-forms.com
     SurveyFormsComponent,
     // MatBudulettonModule,
     // MatIconMo
+    //FlexLayoutModule
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+   FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

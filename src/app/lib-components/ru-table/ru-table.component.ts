@@ -10,6 +10,11 @@ export class RuTableComponent implements OnInit {
   constructor() { }
   @Input() tableTitle="";
   @Input() totalTableDataCount="";
+  @Input() showFilter = false;
+  @Input() showupload = false;
+  @Input() download = false;
+  @Input() showicon = false;
+
   ngOnInit(): void {
   }
 
