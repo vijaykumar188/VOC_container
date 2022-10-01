@@ -10,14 +10,14 @@ export class HeaderBarComponent implements OnInit {
 
 
 
-  @Input() Title:string = '';
+  @Input() Title: string = '';
   @Output() back = new EventEmitter()
-  constructor(private route:Router) { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
   }
 
-  iconClick(){
+  iconClick() {
 
     // this.route.navigate(['/login'])
     this.back.emit();

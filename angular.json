@@ -114,5 +114,7 @@
       }
     }
   },
-  "defaultProject": "voc_container"
+  "cli": {
+    "analytics": "d03b5839-2974-4fdd-82ef-4e326675793d"
+  }
 }

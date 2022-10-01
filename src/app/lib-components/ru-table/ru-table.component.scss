@@ -1,15 +1,6 @@
-// .container{
-//     margin-left: 70px;
-// }
 
-// .loginContainer{
-//     height: 70px;
-//     width: 50px;
-//     color: white;
-//     margin-top: -90px;
-// }
 
-.dataCardContainer{
+.dataCardContainer {
     box-shadow: 0 4px 7px 0 rgba(208, 208, 208, 0.5);
     background: #ffffff;
     border-radius: 10px;
@@ -19,47 +10,51 @@
 }
 
 
-.cardHeader{
+.cardHeader {
     padding: 15px;
     padding-bottom: 15px;
     display: inline-block;
     //  display:inline-block;
     justify-content: space-between;
-    .cardTitle{
-        color:#231F20;
+
+    .cardTitle {
+        color: #231F20;
         font-family: 'RobotoBold';
-        font-size: 16px;
+        font-style: normal;
+        font-size: 26px;
         font-weight: bold;
         letter-spacing: 0;
-        top:6px;
+        margin-left: -12px;
+        top: 6px;
         position: relative;
     }
-    .advFilter{
-        height:25px;
-        width:139px;
+
+    .advFilter {
+        height: 25px;
+        width: 139px;
         color: #231f20;
         font-family: RobotoRegular;
         font-size: 12px;
         letter-spacing: 0;
         box-shadow: 0 2px 4px #00000080;
         border-radius: 12px;
-        display:flex;
+        display: flex;
         justify-content: space-around;
         // margin-right: 20px;
         margin-top: 2px;
         align-items: 2px;
-        margin-left: 1040px;
+        margin-left: 900px;
     }
-    
-    .filterIcon{
-        height:20px;
-        cursor:pointer;
+
+    .filterIcon {
+        height: 20px;
+        cursor: pointer;
     }
-    
-    .bulkupload{
+
+    .bulkupload {
         height: 19px;
         width: 100px;
-        color:#54AD45;
+        color: #54AD45;
         font-family: RobotoRegular;
         font-size: 16px;
         font-weight: bold;
@@ -67,28 +62,29 @@
         line-height: 19px;
         text-align: right;
         // margin-right: 20px;
-        top:6px;
-        position:relative ;
-        margin-left: 1200px;
-    
+        top: 6px;
+        position: relative;
+        margin-left: 20px;
+
     }
-    .download{
+
+    .download {
         height: 19px;
         width: 72px;
-        color:#E33044;
+        color: #E33044;
         font-family: RobotoRegular;
         font-size: 16px;
         font-weight: bold;
         letter-spacing: 0;
         line-height: 19px;
         text-align: right;
-        margin-left: 1320px;
-        top:6px;
-        position:relative ;
+        margin-left: 20px;
+        top: 6px;
+        position: relative;
     }
-    
-    .pointerIcon{
-        height:18px;
+
+    .pointerIcon {
+        height: 18px;
         margin-left: 20px;
     }
 
@@ -96,61 +92,12 @@
 
 }
 
+.tableheader {
+    height: 60px;
+    background-color: #54AD45;
+    font-size: large;
+}
 
-// .advFilter{
-//     height:25px;
-//     width:139px;
-//     color: #231f20;
-//     font-family: RobotoRegular;
-//     font-size: 12px;
-//     letter-spacing: 0;
-//     box-shadow: 0 2px 4px #00000080;
-//     border-radius: 12px;
-//     display:flex;
-//     justify-content: space-around;
-//     // margin-right: 20px;
-//     margin-top: 2px;
-//     align-items: 2px;
-//     margin-left: 1040px;
-// }
-
-// .filterIcon{
-//     height:20px;
-//     cursor:pointer;
-// }
-
-// .bulkupload{
-//     height: 19px;
-//     width: 100px;
-//     color:#54AD45;
-//     font-family: RobotoRegular;
-//     font-size: 16px;
-//     font-weight: bold;
-//     letter-spacing: 0;
-//     line-height: 19px;
-//     text-align: right;
-//     // margin-right: 20px;
-//     top:6px;
-//     position:relative ;
-//     margin-left: 20px;
-
-// }
-// .download{
-//     height: 19px;
-//     width: 72px;
-//     color:#E33044;
-//     font-family: RobotoRegular;
-//     font-size: 16px;
-//     font-weight: bold;
-//     letter-spacing: 0;
-//     line-height: 19px;
-//     text-align: right;
-//     margin-left: 20px;
-//     top:6px;
-//     position:relative ;
-// }
-
-// .pointerIcon{
-//     height:18px;
-//     margin-left: 20px;
-// }
+.tabledata {
+    height: 45px;
+}

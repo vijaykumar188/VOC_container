@@ -13,8 +13,8 @@ import { CsatModuleComponent } from './components/csat-module/csat-module.compon
 import { ProgramsComponent } from './components/programs/programs.component';
 import { CreateSurveyComponent } from './components/create-survey/create-survey.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { HeaderBarComponent } from './lib-components/header-bar/header-bar.component';
 import { CardsComponent } from './lib-components/cards/cards.component';
 import { LaunchSurveyComponent } from './components/launch-survey/launch-survey.component';
@@ -55,7 +55,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-   FlexLayoutModule
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

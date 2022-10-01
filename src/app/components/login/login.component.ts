@@ -8,12 +8,12 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private route:Router) { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
   }
 
-  loginClick(){
+  loginClick() {
     this.route.navigate(['/csat']);
   }
 

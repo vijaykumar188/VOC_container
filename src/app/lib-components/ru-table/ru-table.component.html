@@ -1,32 +1,51 @@
 <div class="dataCardContainer">
 
-    <div class="cardHeader" fxLayout="row" fxLayoutAlign="space-between">
+    <div class="cardHeader" fxLayout="row">
         <span class="cardTitle">
-            <strong>{{tableTitle}} ({{totalTableDataCount}})</strong>
+            <strong class="text-nowrap bg-light border" style="width: 8rem;">{{tableTitle}}
+                ({{totalTableDataCount}})</strong>
         </span>
-      <div>
-        <div style="cursor:pointer;" fxLayout="row">
-            <div class="advFilter" *ngIf="showFilter">Advanced Filter
-                <img src="./assets/filter.png" class="filterIcon">
+        <div fxLayout="row">
+            <div style="cursor:pointer;" fxLayout="row">
+                <div class="advFilter" *ngIf="showFilter">Advanced Filter
+                    <img src="./assets/filter.png" class="filterIcon">
+                </div>
             </div>
-        </div>
 
-        <div class="bulkupload" *ngIf="showupload">BulkUpload</div>
-        <div class="download" *ngIf="download">Download</div>
-        <img src="./assets/collapse_icon.png" alt="close" class="pointerIcon" *ngIf="showicon">
+            <div class="bulkupload" *ngIf="showupload">BulkUpload</div>
+            <div class="download" *ngIf="download">Download</div>
+            <img src="./assets/collapse_icon.png" alt="close" class="pointerIcon" *ngIf="showicon">
 
         </div>
     </div>
 
+    <div>
 
-                            <!-- Header starts -->
-
-  <div class="" fxLyout="row">
-    <div class="" fxLayout="column" >
-
-        <table>
-            
-        </table>
-        
     </div>
-  </div>
+
+
+
+    <table class="table table-striped table-bordered">
+        <tbody class="table-group-divider">
+            <tr>
+
+                <th *ngFor="let column of header" class="tableheader">
+                    {{ column }}
+                </th>
+            </tr>
+        <tbody class="table-group-divider">
+
+
+            <tr *ngFor="let data of tableData">
+                <td *ngFor="let column of header" class="tabledata">
+                    {{ data[column] }}
+
+
+                </td>
+
+            </tr>
+
+    </table>
+
+
+</div>

@@ -1,9 +1,5 @@
-<app-header-bar 
-
-Title="survey forms"
-(back)="backClick()">
+<app-header-bar Title="survey forms" (back)="backClick()">
 
 </app-header-bar>
-<app-ru-table
-tableTitle="survey form"
-totalTableDataCount="0"></app-ru-table>
+<app-ru-table tableTitle="survey form" totalTableDataCount="0" [header]="headers" [tableData]="tabledata">
+</app-ru-table>

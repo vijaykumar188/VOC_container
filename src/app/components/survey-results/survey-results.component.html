@@ -1,9 +1,5 @@
-<app-header-bar 
-
-Title="Survey results"
-(back)="backClick()">
+<app-header-bar Title="Survey results" (back)="backClick()">
 
 </app-header-bar>
-<app-ru-table
-tableTitle="Survey results"
-totalTableDataCount="0"></app-ru-table>
+<app-ru-table tableTitle="Survey results" totalTableDataCount="0" [header]="headers" [tableData]="tabledata">
+</app-ru-table>

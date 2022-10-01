@@ -1,11 +1,9 @@
-<app-header-bar 
-
-Title="Csat Module"
-(back)="backClick()">
+<app-header-bar Title="Csat Module" (back)="backClick()">
 
 </app-header-bar>
 
-<div class="cardContainer" *ngFor="let card of cards" style="align-items:row;display: inline-block;" (click)="cardClicked(card)">
+<div class="cardContainer" *ngFor="let card of cards" style="align-items:row;display: inline-block;"
+    (click)="cardClicked(card)">
     <img [src]="card.src_image" alt="" class="imgContainer">
     <h1 class="title">{{card.title}}</h1>
     <span class="descript">{{card.description}}</span>

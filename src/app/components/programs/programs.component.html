@@ -1,14 +1,7 @@
-<app-header-bar Title="programs"  (back)="backClick()"></app-header-bar>
+<app-header-bar Title="programs" (back)="backClick()"></app-header-bar>
 
 
 
 
-<app-ru-table 
-
-tableTitle="programs"
-totalTableDataCount="0"
-[showFilter]="true"
-[showupload]="true"
-[download]="true">
-
-</app-ru-table>
+<app-ru-table tableTitle="programs" totalTableDataCount="0" [showFilter]="true" [showupload]="true" [download]="true"
+    [header]="headers" [tableData]="tabledata"></app-ru-table>

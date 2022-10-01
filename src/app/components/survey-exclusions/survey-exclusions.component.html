@@ -1,11 +1,5 @@
-<app-header-bar 
-
-Title="survey exclusions"
-(back)="backClick()">
+<app-header-bar Title="survey exclusions" (back)="backClick()">
 
 </app-header-bar>
-<app-ru-table
-tableTitle="survey exclusions"
-totalTableDataCount="0"
-[showicon]="false"
-[showupload]="true"></app-ru-table>
+<app-ru-table tableTitle="survey exclusions" totalTableDataCount="0" [showicon]="false" [showupload]="true"
+    [header]="headers" [tableData]="tabledata"></app-ru-table>

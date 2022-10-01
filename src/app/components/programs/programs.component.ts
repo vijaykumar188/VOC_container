@@ -8,12 +8,39 @@ import { Router } from '@angular/router';
 })
 export class ProgramsComponent implements OnInit {
 
-  constructor(private route:Router) { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
   }
-  backClick(){
+  backClick() {
     this.route.navigate(['/csat'])
   }
 
+
+  headers = ["ID", "NAME", "AGE", "GENDER", "COUNTRY"]
+  tabledata = [
+
+    {
+      ID: "1",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+      ID: "2",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+      ID: "3",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    }
+
+  ]
 }
