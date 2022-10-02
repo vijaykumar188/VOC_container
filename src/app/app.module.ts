@@ -24,6 +24,13 @@ import { UserRoleComponent } from './components/user-role/user-role.component';
 import { QuestionBankComponent } from './components/question-bank/question-bank.component';
 import { SurveyFormsComponent } from './components/survey-forms/survey-forms.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AdvfilterComponent } from './popups/advfilter/advfilter.component';
+import { ProgramDetailsComponent } from './popups/program-details/program-details.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { NgToastModule } from 'ng-angular-popup'
+import {MatSidenavModule} from '@angular/material/sidenav';
+//import { ToastrModule } from 'ngx-toastr';
+// import {MatPaginatorModule} from '@angular/material/paginator';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +51,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     UserRoleComponent,
     QuestionBankComponent,
     SurveyFormsComponent,
+    AdvfilterComponent,
+    ProgramDetailsComponent,
+    //MatTabsModule,
+    //MatPaginatorModule
     // MatBudulettonModule,
     // MatIconMo
     //FlexLayoutModule
@@ -55,7 +66,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatTabsModule,
+    BrowserAnimationsModule,
+    //ToastrModule.forRoot(),
+    NgToastModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

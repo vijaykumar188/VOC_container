@@ -1,0 +1,100 @@
+.roleActive{
+    background-color: #E33044;
+    border: 1px solid #E33044;
+    border-radius: 10px;
+    color:white;
+    padding: 0px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px;
+    cursor: pointer;
+
+}
+
+.roleinactive{
+    background-color: #fff;
+    border: 1px solid #E33044;
+    border-radius: 10px;
+    color:#E33044;
+    padding: 0px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.disableCursor{
+    cursor:not-allowed;
+
+}
+
+.custom-role-btn{
+    outline: 0;
+    margin:0 15px;
+
+}
+
+.user-approver{
+    margin-top: 40px;
+    height: 35px;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0 4px 7px 0 rgba(208, 208, 208, 0.5);
+    background: white;
+    align-items: center;
+    
+    .toggle-btn{
+        border:1px solid;
+        position: relative;
+        min-width: 100px;
+        border-radius: 50px 50px 50px 50px;
+        text-align: center;
+        font-size: 14px;
+        padding:10px;
+        transition:all 0.5s;
+        border-color: white;
+        //@include textEllipsis;
+
+    }
+}
+
+.roleActive{
+    border: 1px solid #E33044;
+    background: #E33044;
+    color:#fff;
+    z-index: 0;
+}
+
+.roleinactive{
+    background:#fff;
+    cursor: pointer;
+    z-index: 0;
+    color: #231F20;
+
+}
+
+.user-approver-font{
+    font-family: RobotoRegular;
+    padding-left: 3px;
+}
+
+.user-btn-pos{
+    margin-right: 0px;
+}
+
+.elp{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.disableDiv{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+
+.mat-tab-group {
+    margin-bottom: 48px;
+  }

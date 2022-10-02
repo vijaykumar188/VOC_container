@@ -39,7 +39,50 @@ export class SurveyExclusionsComponent implements OnInit {
       AGE: "2",
       GENDER: "MALE",
       COUNTRY: "INDIA"
-    }
+    },
+    {
+      ID: "1",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+      ID: "2",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+    ID: "1",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+      ID: "2",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+      ID: "1",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+      ID: "2",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+
 
   ]
 }

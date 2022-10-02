@@ -6,7 +6,7 @@
                 ({{totalTableDataCount}})</strong>
         </span>
         <div fxLayout="row">
-            <div style="cursor:pointer;" fxLayout="row">
+            <div style="cursor:pointer;" fxLayout="row" (click)="advanceClick()">
                 <div class="advFilter" *ngIf="showFilter">Advanced Filter
                     <img src="./assets/filter.png" class="filterIcon">
                 </div>
@@ -28,23 +28,24 @@
     <table class="table table-striped table-bordered">
         <tbody class="table-group-divider">
             <tr>
-
+    
                 <th *ngFor="let column of header" class="tableheader">
                     {{ column }}
                 </th>
             </tr>
         <tbody class="table-group-divider">
-
-
+    
+    
             <tr *ngFor="let data of tableData">
-                <td *ngFor="let column of header" class="tabledata">
+                <td *ngFor="let column of header " class="tabledata" (click)="onrowClick()">
                     {{ data[column] }}
-
-
+    
+    
                 </td>
-
+    
             </tr>
-
+    
+            
     </table>
 
 

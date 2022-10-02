@@ -34,7 +34,58 @@ export class QuestionBankComponent implements OnInit {
       GENDER: "MALE",
       COUNTRY: "INDIA"
     },
+    {
+    ID: "1",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+      ID: "2",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+      ID: "1",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+      ID: "2",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
 
 
   ]
+
+  selectedTab="questions";
+
+  tabItems=[
+   
+    { id:1, name:'questions', isClicked:true },
+    { id:2, name:'draft'},
+]
+
+changeTab(event:any){
+  this.selectedTab = event.name;
+  if(this.selectedTab == 'questions'){
+    //alert('hi');
+
+
+  }
+
+  else if( this.selectedTab == 'draft'){
+    //alert('hello');
+  }
+
+}
+
 }

@@ -1,5 +1,18 @@
 <app-header-bar Title="Question bank" (back)="backClick()">
 
 </app-header-bar>
+
+
+<!-- <app-ru-tabs [items]="tabItems" (valueChange)="changeTab($event)"></app-ru-tabs> -->
+<!-- <div *ngIf="selectedTab == 'questions'">
+    <app-advfilter></app-advfilter>
+</div>
+
+<div *ngIf="selectedTab == 'draft'">
+    <app-program-details></app-program-details>
+</div> -->
+
+
+
 <app-ru-table tableTitle="Question bank" totalTableDataCount="0" [header]="headers" [tableData]="tabledata">
 </app-ru-table>

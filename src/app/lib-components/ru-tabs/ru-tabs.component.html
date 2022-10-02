@@ -1,1 +1,14 @@
-<p>ru-tabs works!</p>
+<!-- <div class="user-approver" fxLayout="row">
+    <div class="toggle-btn" *ngFor="let item of items" [ngClass]="(item.isClicked) ? 'role-active' 
+    : 'role-inactive'" (click)="changeButton(item)" [title]='item.name' >
+    <span class="elp">{{item.name}}</span>
+</div>
+</div> -->
+
+
+
+    <div  class="user-approver" fxLayout="row">
+        <div class="toggle-btn user-approver-font user-btn-pos" *ngFor="let item of items" [ngClass]="(item.isClicked) ? 'role-active' : 'role-inactive'" (click)="changeButton(item)" [title]='item.name' >
+        <span class="elp">{{item.name}}</span>
+        </div>
+    </div>

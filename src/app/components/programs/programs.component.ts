@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatDrawer, MatSidenav } from '@angular/material/sidenav';
+
+
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,9 +10,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./programs.component.scss']
 })
 export class ProgramsComponent implements OnInit {
-
+ 
+  
   constructor(private route: Router) { }
-
+  @ViewChild('drawer', { static: true })drawer: MatDrawer;
+  @ViewChild('sidenav', { static: true })sidenav: MatSidenav;
+  showFiller = false;
+  
   ngOnInit(): void {
   }
   backClick() {
@@ -17,6 +24,8 @@ export class ProgramsComponent implements OnInit {
   }
 
 
+
+  selectedTab="parameters";
   headers = ["ID", "NAME", "AGE", "GENDER", "COUNTRY"]
   tabledata = [
 
@@ -40,7 +49,70 @@ export class ProgramsComponent implements OnInit {
       AGE: "2",
       GENDER: "MALE",
       COUNTRY: "INDIA"
-    }
+    },
+    {
+      ID: "2",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+      ID: "3",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+      ID: "2",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+      ID: "3",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+   
+    
 
   ]
+
+
+  rowClick(){
+    //this.route.navigate(['/login']);
+    this.sidenav.open();
+
+  }
+
+  filterClick(){
+    this.drawer.open();
+
+  }
+
+
+  tabItems=[
+   
+      { id:1, name:'parameters', isClicked:true },
+      { id:2, name:'requirements'},
+  ]
+
+  changeTab(event:any){
+    this.selectedTab = event.name;
+    if(this.selectedTab == 'parameters'){
+      alert('hi');
+
+
+    }
+
+    else if( this.selectedTab == 'requirements'){
+      alert('hello');
+    }
+
+  }
 }
