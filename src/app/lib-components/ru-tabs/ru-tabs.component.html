@@ -6,9 +6,28 @@
 </div> -->
 
 
-
+<!-- 
     <div  class="user-approver" fxLayout="row">
         <div class="toggle-btn user-approver-font user-btn-pos" *ngFor="let item of items" [ngClass]="(item.isClicked) ? 'role-active' : 'role-inactive'" (click)="changeButton(item)" [title]='item.name' >
         <span class="elp">{{item.name}}</span>
         </div>
-    </div>
+    </div> -->
+
+    <ul class="nav nav-pills nav-justified user-approver">
+        <li class="nav-item" *ngFor="let item of items" [ngClass]="(item.isClicked) ? 'role-active' : 'role-inactive'" (click)="changeButton(item)" [title]='item.name' >
+          <a class="elp" aria-current="page" >{{item.name}}</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Much longer nav link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> -->
+      </ul>
+
+  
+      
+

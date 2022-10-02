@@ -30,7 +30,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { NgToastModule } from 'ng-angular-popup'
 import {MatSidenavModule} from '@angular/material/sidenav';
 //import { ToastrModule } from 'ngx-toastr';
-// import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatPaginatorModule} from '@angular/material/paginator';
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,7 +71,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     BrowserAnimationsModule,
     //ToastrModule.forRoot(),
     NgToastModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

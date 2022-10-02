@@ -26,7 +26,10 @@ export class RuTabsComponent implements OnInit {
       this.items.forEach((item) => { item['isClicked'] = false; });
       val['isClicked'] = true;
       this.valueChange.emit(val);
+      
     }
   }
+
+  
 
 }

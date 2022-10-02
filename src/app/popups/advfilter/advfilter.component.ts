@@ -12,4 +12,8 @@ export class AdvfilterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  close(){
+    this.sidenavContainer.close();
+  }
+
 }

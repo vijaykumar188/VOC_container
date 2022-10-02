@@ -6,18 +6,18 @@
 
 
     <app-ru-table tableTitle="programs" totalTableDataCount="0" [showFilter]="true" [showupload]="true"
-        [download]="true" [header]="headers" [tableData]="tabledata" (onrowClickd)="rowClick()" (advanceClickd)="filterClick()"></app-ru-table>
+        [download]="true"  [showSearch]="true" [header]="headers" [tableData]="tabledata" (onrowClickd)="rowClick()" (advanceClickd)="filterClick()"></app-ru-table>
 
 
-    <mat-drawer #drawer class="example-sidenav" mode="over" position="end">
+    <mat-drawer #drawer class="sidenav" mode="over" position="end">
 
-        <app-advfilter></app-advfilter>
+        <app-advfilter [sidenavContainer]="sidenavContainer"></app-advfilter>
 
     </mat-drawer>
    
     <mat-sidenav #sidenav class="example-sidenav" mode="over" position="end">
 
-    <app-program-details></app-program-details>
+    <app-program-details [sidenav]="sidenav"></app-program-details>
 
 
    </mat-sidenav>

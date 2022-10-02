@@ -13,7 +13,7 @@ export class ProgramsComponent implements OnInit {
  
   
   constructor(private route: Router) { }
-  @ViewChild('drawer', { static: true })drawer: MatDrawer;
+  @ViewChild('drawer', { static: true })sidenavContainer: MatDrawer;
   @ViewChild('sidenav', { static: true })sidenav: MatSidenav;
   showFiller = false;
   
@@ -27,10 +27,25 @@ export class ProgramsComponent implements OnInit {
 
   selectedTab="parameters";
   headers = ["ID", "NAME", "AGE", "GENDER", "COUNTRY"]
+  
   tabledata = [
 
     {
-      ID: "1",
+      "ID": "1",
+      "NAME": "4ft",
+      "AGE": "2",
+      "GENDER": "MALE",
+      "COUNTRY": "INDIA"
+    },
+    {
+      ID: "2",
+      NAME: "4ft",
+      AGE: "2",
+      GENDER: "MALE",
+      COUNTRY: "INDIA"
+    },
+    {
+      ID: "3",
       NAME: "4ft",
       AGE: "2",
       GENDER: "MALE",
@@ -91,7 +106,7 @@ export class ProgramsComponent implements OnInit {
   }
 
   filterClick(){
-    this.drawer.open();
+    this.sidenavContainer.open();
 
   }
 
@@ -99,7 +114,8 @@ export class ProgramsComponent implements OnInit {
   tabItems=[
    
       { id:1, name:'parameters', isClicked:true },
-      { id:2, name:'requirements'},
+      { id:2, name:'requirements',disabled:true},
+      { id:3, name:'progrms'},
   ]
 
   changeTab(event:any){
@@ -111,6 +127,10 @@ export class ProgramsComponent implements OnInit {
     }
 
     else if( this.selectedTab == 'requirements'){
+      alert('hello');
+    }
+
+    else if( this.selectedTab == 'progrms'){
       alert('hello');
     }
 

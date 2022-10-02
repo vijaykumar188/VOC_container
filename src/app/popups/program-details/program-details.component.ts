@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-program-details',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./program-details.component.scss']
 })
 export class ProgramDetailsComponent implements OnInit {
-
+  @Input() sidenav:any;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  close(){
+    this.sidenav.close();
+  }
 }
